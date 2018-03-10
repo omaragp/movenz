@@ -1,17 +1,17 @@
 <?php
-	
+
 	require_once("lib_php/Textos_HTML.php");
 	require_once("lib_php/template.php");
-	
-	
+
+
 	if (!isset($_SESSION[adminId]))
 		header("location: index.php");
-	
-	
+
+
 	$textos = $Textos_HTML;
 	$lang = template_getLenguaje();
-	
-	
+
+
 	CabeceraHTML("agenteClientes_ver2.css,agenteClientes.js");
 	CuerpoHTML(0);
 ?>
@@ -31,4 +31,7 @@
 <?php
 	FinCuerpo();
 	FinHTML();
+
+
+	//AGREGANDO ALGO
 ?>
